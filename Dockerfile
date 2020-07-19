@@ -22,8 +22,8 @@ RUN mkdir -p /tmp/dependencies  \
 
 #如果修改JRE_VERSION中的版本号，需要对应修改JAVA_HOME路径中的版本
 ENV JAVA_HOME /usr/local/java/jdk1.8.0_251
-ENV MAVEN_HOME /usr/local/mvn
-ENV PATH $PATH:$JAVA_HOME/bin:$MAVEN_HOME
+ENV MAVEN_HOME /usr/local/mvn/apache-maven-3.6.3
+ENV PATH $PATH:$JAVA_HOME/bin:$MAVEN_HOME/bin
 #设置时区为上海
 ENV TZ Asia/Shanghai
 
